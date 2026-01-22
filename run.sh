@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPOSE_URL="docker-compose.yml"
+COMPOSE_URL="https://raw.githubusercontent.com/lazio47/cassandra-node-test/refs/heads/main/docker-compose.yml"
 
 echo "--- Initiating Cassandra ---"
 
