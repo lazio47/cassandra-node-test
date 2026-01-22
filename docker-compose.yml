@@ -21,7 +21,7 @@ services:
       - CASSANDRA_SEEDS=${SEED_IP}     
       - CASSANDRA_BROADCAST_ADDRESS=${MY_IP}
       - CASSANDRA_BROADCAST_RPC_ADDRESS=${MY_IP}
-      - JVM_EXTRA_OPTS=-Dcassandra.replace_address=${MY_IP}
+      - JVM_EXTRA_OPTS=-Dcassandra.replace_address=${MY_IP} -Dcassandra.allow_unsafe_replace=true
     volumes:
       - dicoogle_data:/var/lib/cassandra
     healthcheck:
