@@ -14,6 +14,6 @@ fi
 
 
 echo "Starting container..."
-docker compose up -d
+docker compose up 
 
 echo "Done! Cassandra is running in a Docker container."
